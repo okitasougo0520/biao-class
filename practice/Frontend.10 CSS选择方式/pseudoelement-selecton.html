@@ -1,0 +1,79 @@
+<!-- 伪元素选择器 -->
+<style>
+    .title {
+        font-size: 150%;
+        margin-top: 25px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    td,
+    th {
+        border: 1px solid #000;
+    }
+
+    td:last-of-type::before {
+        content: "$";
+    }
+
+    td:last-of-type::after {
+        content: "...";
+    }
+
+    p::first-line {
+
+        font-size: 150%;
+    }
+
+    p::first-letter {
+        font-size: 200%;
+    }
+
+    input::placeholder {
+        color: #000;
+        font-weight: bold;
+        text-decoration: line-through;
+    }
+
+    a::selection{
+        background: pink;
+    }
+</style>
+
+<div class="title">::before、::after</div>
+<table>
+    <thead>
+        <th>菜名</th>
+        <th>价格</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>回锅肉</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>酸菜鱼</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>扬州炒饭</td>
+            <td>18</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="title">::first-line、first-later</div>
+<p>
+    东市买骏马，西市买鞍鞯，南市买辔头，北市买长鞭。旦辞爷娘去，暮宿黄河边，不闻爷娘唤女声，但闻黄河流水鸣溅溅。旦辞黄河去，暮至黑山头，不闻爷娘唤女声，但闻燕山胡骑鸣啾啾。
+    万里赴戎机，关山度若飞。朔气传金柝，寒光照铁衣。将军百战死，壮士十年归。
+</p>
+
+<div class="title">::placeholder</div>
+<input placeholder="用户名/手机/邮箱">
+
+<div class="title">::selection</div>
+<a>
+    王花花和小熊跳舞跳呀跳呀一二一。
+</a>

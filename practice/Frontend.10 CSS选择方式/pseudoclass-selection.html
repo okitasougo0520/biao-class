@@ -1,0 +1,163 @@
+<!-- 伪类选择器： 按元素状态指定样式 -->
+
+<style>
+    .title {
+        font-size: 150%;
+        margin-top: 25px;
+    }
+
+    a.href:hover {
+        /* 当鼠标悬停在<a>上时，再作用以下样式 */
+        border: 2px solid #000;
+    }
+
+    button:active {
+        /* 鼠标按下作用样式，松开后还原样式 */
+        border: 2px solid #000;
+    }
+
+    .focus:focus {
+        /* 当鼠标点击输入框或用Tab切换到输入框时作用样式 */
+        background: black;
+    }
+
+    [type="checkbox"]:checked {
+        /* 当选项框处于勾选状态时作用样式 */
+        outline: 2px solid #000;
+    }
+
+    input:disabled {
+        /*作用于被禁用的元素上 */
+        outline: 2px solid #000;
+    }
+
+    .enabled:enabled {
+        /*作用于未被禁用的元素上 */
+        outline: 2px solid red;
+    }
+
+    p:empty {
+        /*作用于不包含任何子元素或文字的元素上 */
+        outline: 2px solid #000;
+    }
+
+    .child:first-child {
+        /*作用于选中一组平行元素中最先出现的元素 */
+        outline: 2px solid black;
+    }
+
+    .child:nth-child(2) {
+        /*作用于选中一组平行元素中第n个出现的元素 */
+        outline: 2px solid red;
+    }
+
+    .child:last-child {
+        /*作用于选中一组平行元素中最后出现的元素 */
+        outline: 2px solid blue;
+    }
+
+    .child:nth-last-child(2) {
+        /*作用于选中一组平行元素中倒数第n个出现的元素 */
+        outline: 2px solid green;
+    }
+
+    h3:first-of-type {
+        /*作用于同类中第一项 */
+        outline: 2px solid tomato;
+    }
+
+    h2:last-of-type {
+        /*作用于同类中最后一项 */
+        outline: 2px solid #000;
+    }
+
+    h2:nth-of-type(3) {
+        /*作用于选中一组平行元素中第n个出现的元素 */
+        outline: 2px solid red;
+    }
+
+    h3:nth-last-of-type(3) {
+        /*作用于选中一组平行元素中倒数第n个出现的元素 */
+        outline: 2px solid #000;
+    }
+
+    .item:not(a) {
+        /*排除item中的a选项 */
+        outline: 2px solid #000;
+    }
+
+    h4:only-child {
+        /*作用于没有兄弟的元素 */
+        outline: 2px solid #000;
+    }
+</style>
+
+<div class="title">hover：</div>
+<a href="#" class="href">Yo</a>
+
+<br>
+<div class="title">active：</div>
+<button href="#">Yo</button>
+
+<br>
+<div class="title">focus：</div>
+<input class="focus">
+
+<br>
+<div class="title">checked：</div>
+<input type="checkbox" checked>
+
+<br>
+<div class="title">disabled：</div>
+<input disabled>
+
+<br>
+<div class="title">enabled：</div>
+<input enabled class="enabled">
+
+<br>
+<div class="title">empty：</div>
+<p>我有内容</p>
+<p></p> <!-- 我没内容（所以也没高度，上下边框贴在一起） -->
+
+<br>
+<div class="title">first-child、last-child、nth-child、nth-last-child：</div>
+<div>
+    <span class="child">老大</span>
+    <span class="child">老二</span>
+    <span class="child">老三</span>
+    <span class="child">老四</span>
+    <span class="child">老五</span>
+</div>
+
+<br>
+<div class="title">first-of-type、last-of-type、nth-of-type、nth-last-of-type：</div>
+<h2>h2老大</h2>
+<h2>h2老二</h2>
+<h2>h2老三</h2>
+<h2>h2老四</h2>
+<h2>h2老五</h2>
+<br>
+<br>
+<h3>h3老大</h3>
+<h3>h3老二</h3>
+<h3>h3老三</h3>
+<h3>h3老四</h3>
+<h3>h3老五</h3>
+
+<br>
+<div class="title">not：</div>
+<a class="item">我是a</a>
+<span class="item">我是span</span>
+
+    
+<br>
+<br>
+<div class="title">only-child：</div>
+<div>
+    <h4>老大</h4>
+    <h4>老二</h4>
+</div>
+<div>
+    <h4>金疙瘩</h4>
+</div>
