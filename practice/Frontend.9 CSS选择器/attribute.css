@@ -1,0 +1,19 @@
+[href] {
+    border: 2px dashed #000; /* 为所有包含 href 属性的元素添加边框 */
+}
+
+[href="https://biaoyansu.com"] {
+    background: pink; /*仅高亮href属性等于 "https://biaoyansu.com" 的元素*/
+}
+
+[href*="wiki"] {
+    color:red; /* 给所有属性为href且属性值包含 "wiki" 的元素改变颜色为红色 */
+}
+
+[href^="https://www."] {
+    font-size: 200%; /* 给所有拥有href属性且属性值以"https://www."开头的元素大小为200% */
+}
+
+[href$=".org"] {
+    background:green; /* 给所有属性为href且属性值以".org"结束的的元素改变背景颜色为绿色 */
+}

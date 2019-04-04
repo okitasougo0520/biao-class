@@ -1,0 +1,7 @@
+* {
+    border: 2px solid #000;/*为页面所有元素添加边框*/
+}
+
+body *{
+    background: red;/*为body中所有元素添加背景颜色为红色*/
+}
