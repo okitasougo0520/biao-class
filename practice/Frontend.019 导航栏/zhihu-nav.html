@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="col-24.css">
+
+<style>
+    body{
+        margin:0;
+    }
+    .text-right{
+        text-align: right;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .nav #logo{
+        margin:.2em 1em;
+        padding: 0;
+        font-size: 150%;
+        color:rgb(0, 132, 255);
+    }
+    .nav a{
+        display:inline-block;
+        padding: 1em 1em;
+        color:gray;
+    }
+    .nav a:focus{
+        color:black;
+    }
+    .nav input,
+    .nav button{
+        border: 0;
+        border-radius: 3px;
+        margin: 1em .5em;
+    }
+    .nav input{
+        padding: .4em 1em;
+        width:70%;
+        color:gray;
+        background: rgb(246,246,246);
+        border: 1px solid rgba(128,128,128,.1);
+    }
+    .nav button{
+        background: rgb(0, 132, 255);
+        color:white;
+        padding: .4em 1em;
+    }
+    .nav input:focus{
+        color:black;
+        border: .5px solid rgba(0,0,0,.3);
+        outline: 0;
+    }
+    .nav .picture{
+        padding: 1em 1.5em;
+    }
+</style>
+
+<div class="nav row">
+    <div class="col col-7">
+            <a href="" id="logo">知乎</a>
+            <a href="">首页</a>
+            <a href="">发现</a>
+            <a href="">话题</a>
+    </div>
+    <div class="col col-9">
+        <input type="text" name="" id="" value="输入您想问的问题">
+        <button>提问</button>
+    </div>
+    <div class="col col-8 text-right">
+        <a href="" class="picture">消息</a>
+        <a href="" class="picture">私信</a>
+        <a href="" class="picture">头像</a>
+    </div>
+</div>
