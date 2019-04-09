@@ -5,7 +5,7 @@
 }
 
 .row:before, .row:after {
-    content: '';
+    content: ''; 
     display: block;
     clear: both;
 }
