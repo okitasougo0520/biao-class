@@ -28,26 +28,18 @@
         border: solid;
     }
 
-    .space-around {
+    .stretch {
         display: flex;
-        align-items: space-around;
-        /*子项两边空间相等（而不是间距相等）*/
+        justify-content: stretch;
+        /*拉伸对齐*/
 
         border: solid;
     }
 
-    .space-between {
+    .baseline {
         display: flex;
-        align-items: space-between;
-        /*间距相等，首尾无间距*/
-
-        border: solid;
-    }
-
-    .space-evenly {
-        display: flex;
-        align-items: space-evenly;
-        /*间距相等，首尾有间距*/
+        justify-content: baseline;
+        /*基线对齐*/
 
         border: solid;
     }
@@ -88,20 +80,14 @@
     <div id="b" class="child">B</div>
     <div id="c" class="child">C</div>
 </div>
-<pre>space-around</pre>
-<div class="space-around">
+<pre>stretch</pre>
+<div class="stretch">
     <div id="a" class="child">A</div>
     <div id="b" class="child">B</div>
     <div id="c" class="child">C</div>
 </div>
-<pre>space-between</pre>
-<div class="space-between">
-    <div id="a" class="child">A</div>
-    <div id="b" class="child">B</div>
-    <div id="c" class="child">C</div>
-</div>
-<pre>space-evenly</pre>
-<div class="space-evenly">
+<pre>baseline</pre>
+<div class="baseline">
     <div id="a" class="child">A</div>
     <div id="b" class="child">B</div>
     <div id="c" class="child">C</div>
