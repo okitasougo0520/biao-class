@@ -1,0 +1,32 @@
+<style>
+    .parent {
+        display: flex;
+        align-items: flex-start;
+        border: solid;
+    }
+
+    .child {
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    #a {
+        align-self: flex-end;
+        /* 仅A为flex-end对齐方式 */
+        padding: 20px;
+    }
+
+    #b {
+        padding: 50px;
+    }
+
+    #c {
+        padding: 80px;
+    }
+</style>
+
+<div class="parent">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
