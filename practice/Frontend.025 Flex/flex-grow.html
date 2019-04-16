@@ -1,0 +1,52 @@
+<style>
+    .parent {
+        display: flex;
+        /* flex-grow: 0;     默认值为0*/
+        border: solid;
+    }
+
+    .grow-0 {
+        border: solid tomato;
+        padding: 20px;
+        /* flex-grow: 0;     默认值为0*/
+    }
+
+    .grow-1 {
+        flex-grow: 1;
+        /*所有子项的胃口都是1*/
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    .grow-2 {
+        flex-grow: 2;
+        /*所有子项的胃口都是2,比1多一倍*/
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    .grow-3 {
+        flex-grow: 3;
+        /*所有子项的胃口都是3,比1多两倍*/
+        border: solid tomato;
+        padding: 20px;
+    }
+</style>
+
+<div class="parent">
+    <div class="grow-0">0</div>
+    <div class="grow-0">0</div>
+    <div class="grow-0">0</div>
+</div>
+
+<div class="parent">
+    <div class="grow-1">1</div>
+    <div class="grow-1">1</div>
+    <div class="grow-1">1</div>
+</div>
+
+<div class="parent">
+    <div class="grow-1">1</div>
+    <div class="grow-2">2</div>
+    <div class="grow-3">1</div>
+</div>
