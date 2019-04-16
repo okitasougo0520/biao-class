@@ -1,0 +1,96 @@
+<style>
+    pre {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .flex-start {
+        display: flex;
+        justify-content: flex-start;
+        /*从头到尾*/
+
+        border: solid;
+    }
+
+    .flex-end {
+        display: flex;
+        justify-content: flex-end;
+        /*从尾到头*/
+
+        border: solid;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        /*居中*/
+
+        border: solid;
+    }
+
+    .space-around {
+        display: flex;
+        justify-content: space-around;
+        /*子项两边空间相等（而不是间距相等）*/
+
+        border: solid;
+    }
+
+    .space-between {
+        display: flex;
+        justify-content: space-between;
+        /*间距相等，首尾无间距*/
+
+        border: solid;
+    }
+
+    .space-evenly {
+        display: flex;
+        justify-content: space-evenly;
+        /*间距相等，首尾有间距*/
+
+        border: solid;
+    }
+
+    .child {
+        border: solid tomato;
+        padding: 20px;
+    }
+</style>
+
+<pre>flex-start</pre>
+<div class="flex-start">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+<pre>flex-end</pre>
+<div class="flex-end">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+<pre>center</pre>
+<div class="center">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+<pre>space-around</pre>
+<div class="space-around">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+<pre>space-between</pre>
+<div class="space-between">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+<pre>space-evenly</pre>
+<div class="space-evenly">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
