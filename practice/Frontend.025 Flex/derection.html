@@ -1,0 +1,66 @@
+<style>
+    pre {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .parent {
+        display: flex;
+        /*关键属性*/
+        border: solid;
+    }
+
+    .child {
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: row;
+        /*关键属性，从左到右*/
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse;
+        /*关键属性，从右到左*/
+    }
+
+    .column {
+        flex-direction: column;
+        /*关键属性，从上到下*/
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse;
+        /*关键属性，从下到上*/
+    }
+
+</style>
+
+<pre>row</pre>
+<div class="parent row">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+
+<pre>row-reverse</pre>
+<div class="parent row-reverse">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+
+<pre>column</pre>
+<div class="parent column">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
+
+<pre>column-reverse</pre>
+<div class="parent column-reverse">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+</div>
