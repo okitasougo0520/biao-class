@@ -1,0 +1,77 @@
+<style>
+    .parent {
+        display: flex;
+        /* flex-grow: 0;     默认值为0*/
+        border: solid;
+    }
+
+    pre {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .shrink-0 {
+        border: solid tomato;
+        padding: 20px;
+        /* flex-shrink: 0;     默认值为0*/
+    }
+
+    .shrink-1 {
+        flex-shrink: 1;
+        /*所有子项牺牲都是1*/
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    .shrink-2 {
+        flex-shrink: 2;
+        /*所有子项牺牲都是2,比1多一倍*/
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    .shrink-3 {
+        flex-shrink: 3;
+        /*所有子项牺牲都是3,比1多两倍*/
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    .shrink-0,
+    .shrink-1,
+    .shrink-2,
+    .shrink-3 {
+        width: 100%;
+        /*大家的宽度都是100%*/
+        border: solid tomato;
+        padding: 20px;
+    }
+</style>
+
+<pre>0 0 0</pre>
+<div class="parent">
+    <div class="shrink-0">0</div>
+    <div class="shrink-0">0</div>
+    <div class="shrink-0">0</div>
+</div>
+
+<pre>1 1 1</pre>
+<div class="parent">
+    <div class="shrink-1">1</div>
+    <div class="shrink-1">1</div>
+    <div class="shrink-1">1</div>
+</div>
+
+<pre>1 2 1</pre>
+<div class="parent">
+    <div class="shrink-1">1</div>
+    <div class="shrink-2">2</div>
+    <div class="shrink-1">1</div>
+</div>
+
+<pre>1 2 3</pre>
+<div class="parent">
+    <div class="shrink-1">1</div>
+    <div class="shrink-2">2</div>
+    <div class="shrink-3">3</div>
+</div>
