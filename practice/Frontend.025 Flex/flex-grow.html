@@ -5,6 +5,11 @@
         border: solid;
     }
 
+    pre {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
     .grow-0 {
         border: solid tomato;
         padding: 20px;
@@ -32,21 +37,30 @@
         padding: 20px;
     }
 </style>
-
+<pre>0 0 0</pre>
 <div class="parent">
     <div class="grow-0">0</div>
     <div class="grow-0">0</div>
     <div class="grow-0">0</div>
 </div>
 
+<pre>1 1 1</pre>
 <div class="parent">
     <div class="grow-1">1</div>
     <div class="grow-1">1</div>
     <div class="grow-1">1</div>
 </div>
 
+<pre>1 2 1</pre>
 <div class="parent">
     <div class="grow-1">1</div>
     <div class="grow-2">2</div>
-    <div class="grow-3">1</div>
+    <div class="grow-1">1</div>
+</div>
+
+<pre>1 2 3</pre>
+<div class="parent">
+    <div class="grow-1">1</div>
+    <div class="grow-2">2</div>
+    <div class="grow-3">3</div>
 </div>
