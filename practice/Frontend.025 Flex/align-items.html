@@ -1,0 +1,108 @@
+<style>
+    pre {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .flex-start {
+        display: flex;
+        align-items: flex-start;
+        /*从头到尾*/
+
+        border: solid;
+    }
+
+    .flex-end {
+        display: flex;
+        align-items: flex-end;
+        /*从尾到头*/
+
+        border: solid;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        /*居中*/
+
+        border: solid;
+    }
+
+    .space-around {
+        display: flex;
+        align-items: space-around;
+        /*子项两边空间相等（而不是间距相等）*/
+
+        border: solid;
+    }
+
+    .space-between {
+        display: flex;
+        align-items: space-between;
+        /*间距相等，首尾无间距*/
+
+        border: solid;
+    }
+
+    .space-evenly {
+        display: flex;
+        align-items: space-evenly;
+        /*间距相等，首尾有间距*/
+
+        border: solid;
+    }
+
+    .child {
+        border: solid tomato;
+        padding: 20px;
+    }
+
+    #a {
+        padding: 20px;
+    }
+
+    #b {
+        padding: 50px;
+    }
+
+    #c {
+        padding: 80px;
+    }
+</style>
+
+<pre>flex-start</pre>
+<div class="flex-start">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+<pre>flex-end</pre>
+<div class="flex-end">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+<pre>center</pre>
+<div class="center">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+<pre>space-around</pre>
+<div class="space-around">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+<pre>space-between</pre>
+<div class="space-between">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+<pre>space-evenly</pre>
+<div class="space-evenly">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
