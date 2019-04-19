@@ -1,0 +1,303 @@
+.container {
+    margin-left: 25.8%;
+    margin-right: 25.8%;
+}
+
+.nav-global {
+    background: rgb(51, 51, 51);
+    color: #b0b0b0;
+}
+
+.nav-global .link-group a, .nav-global .account a {
+    display: inline-block;
+    margin: .8em .5em;
+}
+
+.nav-global .link-group a:after, .nav-global .account a:after {
+    content: "";
+    height: 1em;
+    width: .05em;
+    display: inline-block;
+    background: rgb(66, 66, 66);
+    position: relative;
+    top: .2em;
+    left: .5em;
+}
+
+.nav-global .link-group a:last-child:after, .nav-global .account a:last-child:after {
+    display: none;
+}
+
+.nav-global .link-group a:first-child {
+    margin-left: 0;
+}
+
+.nav-global .link-group a:hover, .nav-global .account a:hover {
+    color: #fff;
+}
+
+.shop_card {
+    display: inline-block;
+    background: rgb(66, 66, 66);
+    padding: .3em 1em .3em .3em;
+    margin-left: 1em;
+}
+
+.shop_card>* {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.shop_card:hover {
+    background: #fff;
+    color: rgb(255, 103, 0);
+}
+
+.shop_card .iconfont {
+    font-size: 1.8em;
+    margin-right: 0;
+    margin-left: .5em;
+}
+
+.nav-page {
+    background: #fff;
+}
+
+.nav-aside{
+    position: fixed;
+    right: 0;
+    bottom: 12em;
+    font-size: 1.2em;
+}
+
+.nav-aside .item{
+    text-align: center;
+    padding: .5em 1em;
+    border: .1em solid rgb(245, 245, 245);
+    color: rgb(153, 153, 153);
+    background: #fff;
+}
+
+.nav-aside .item:hover{
+    color:rgb(255, 103, 0);
+}
+
+.nav-aside .iconfont{
+    font-size: 2em;
+    margin:auto;
+}
+
+.nav-page .nav {
+    margin: 2em 0;
+}
+
+.nav-page .nav .logobg,
+.footer .metainformation .logobg{
+    display: inline-block;
+    background: rgb(255, 103, 0);
+    width: 5em;
+    height: 5em;
+    position: absolute;
+}
+
+.nav-page .nav .mi-logo,
+.footer .metainformation .mi-logo {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    background: url(../img/mi-logo.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    left: .5em;
+    top: .5em;
+}
+
+.nav-page .link-group a {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 1em .5em .8em 0;
+}
+
+.nav-page .link-group a:hover {
+    color: rgb(255, 103, 0);
+}
+
+.nav-page .search {
+    font-size: 0;
+}
+
+.nav-page .search input, .nav-page .search button {
+    position: relative;
+    top: .3em;
+}
+
+.nav-page .search input {
+    border: .1em solid rgb(224, 224, 224);
+    margin: 0;
+    padding: 1em .5em;
+    vertical-align: middle;
+    width: 82%;
+}
+
+.nav-page .search input:hover {
+    border: .1em solid rgb(176, 176, 176);
+}
+
+.nav-page .search input:hover+button {
+    border: .1em solid rgb(176, 176, 176);
+    border-left: 0;
+}
+
+.nav-page .search input:focus {
+    border: .1em solid rgb(255, 103, 0);
+    outline: 0;
+}
+
+.nav-page .search input:focus+button {
+    border: .1em solid rgb(255, 103, 0);
+    border-left: 0;
+}
+
+.nav-page .search>* {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+.nav-page .search button {
+    border: .1em solid rgb(224, 224, 224);
+    border-left: 0;
+    width: 4em;
+    height: 3.35em;
+    background: #fff;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.nav-page .search button:hover {
+    color: #fff;
+    background: rgb(255, 103, 0);
+}
+
+.nav-page .search .iconfont {
+    font-size: 1.5em;
+}
+
+.nav-page .search span {
+    color: rgb(117, 117, 117);
+    background: rgb(238, 238, 238);
+    display: inline-block;
+    padding: .1em .3em;
+    font-size: 10px;
+    margin-left: 1em;
+    position: relative;
+    left: 10.5em;
+    bottom: 2.3em;
+}
+
+.nav-page .search span:hover {
+    color: #fff;
+    background: rgb(255, 103, 0);
+}
+
+.footer{
+    background: #fff;
+    color: rgb(117, 117, 117);
+}
+
+.footer .serve .serve-type{
+    width: 20%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 2em 2.5em;
+    border-bottom: .05em solid rgb(224, 224, 224);
+}
+
+.footer .serve .serve-type:after{
+    display: inline-block;
+    content: "";
+    width: .08em;
+    height: 2em;
+    background: rgb(224, 224, 224);
+    position: relative;
+    left:2.5em;
+    top:.6em;
+}
+
+.footer .serve .serve-type:last-child:after{
+    display: none;
+}
+
+.footer .serve .serve-type .iconfont{
+    font-size: 2em;
+    position: relative;
+    top:.2em;
+    right: .2em;
+}
+
+.footer .serve .serve-type:hover{
+    color: rgb(255, 103, 0);
+}
+
+.footer .linkgroup{
+    width: 80%;
+    text-align: left;
+    margin: 3em 0;
+}
+
+.footer .linkgroup .link-type{
+    font-size: 1.1em;
+    color: rgb(66, 66, 66);
+    margin-bottom: 1.5em;
+}
+
+.footer .linkgroup a{
+    display: block;
+    margin: .5em 0;
+}
+
+.footer .call{
+    width: 20%;
+    text-align: center;
+    margin: 3em 0;
+}
+
+.footer .call .phonenumber{
+    font-size: 1.5em;
+    color: rgb(255, 103, 0);
+    margin-bottom: .5em;
+}
+
+.footer .call button{
+    color: rgb(255, 103, 0);
+    background: #fff;
+    border: .1em solid rgb(255, 103, 0);
+    padding: .3em 1.5em;
+    margin-top: 1.5em;
+}
+
+.footer .call button:hover{
+    color: #fff;
+    background: rgb(255, 103, 0);
+}
+
+.footer .call .iconfont{
+    font-size: .5em;
+    position: relative;
+    right:.2em;
+}
+
+.footer .metainformation{
+    background: rgb(250, 250, 250);
+}
+
+.footer .metainformation .meta-group{
+    position: relative;
+    left: 2em;
+}
+
+.footer .slogan{
+    background: url(../img/slogan.png);
+    width: 267px;
+    height: 20px;
+    margin:3em auto;
+}
