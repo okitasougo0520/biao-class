@@ -1,0 +1,525 @@
+<link rel="stylesheet" href="https://public.biaoyansu.com/frontend/046-mi/css/universal.css">
+<link rel="stylesheet" href="https://public.biaoyansu.com/frontend/046-mi/css/global.css">
+<link rel="stylesheet" href="https://public.biaoyansu.com/frontend/046-mi/css/home.css">
+
+<style media="screen and (max-width:700px)">
+    .col-md-24 {
+        width: 100%;
+    }
+
+    .col-md-23 {
+        width: 95.83333333333334%;
+    }
+
+    .col-md-22 {
+        width: 91.66666666666667%;
+    }
+
+    .col-md-21 {
+        width: 87.5%;
+    }
+
+    .col-md-20 {
+        width: 83.33333333333334%;
+    }
+
+    .col-md-19 {
+        width: 79.16666666666667%;
+    }
+
+    .col-md-18 {
+        width: 75%;
+    }
+
+    .col-md-17 {
+        width: 70.83333333333334%;
+    }
+
+    .col-md-16 {
+        width: 66.66666666666667%;
+    }
+
+    .col-md-15 {
+        width: 62.50000000000001%;
+    }
+
+    .col-md-14 {
+        width: 58.333333333333336%;
+    }
+
+    .col-md-13 {
+        width: 54.16666666666667%;
+    }
+
+    .col-md-12 {
+        width: 50%;
+    }
+
+    .col-md-11 {
+        width: 45.833333333333336%;
+    }
+
+    .col-md-10 {
+        width: 41.66666666666667%;
+    }
+
+    .col-md-9 {
+        width: 37.5%;
+    }
+
+    .col-md-8 {
+        width: 33.333333333333336%;
+    }
+
+    .col-md-7 {
+        width: 29.166666666666668%;
+    }
+
+    .col-md-6 {
+        width: 25%;
+    }
+
+    .col-md-5 {
+        width: 20.833333333333336%;
+    }
+
+    .col-md-4 {
+        width: 16.666666666666668%;
+    }
+
+    .col-md-3 {
+        width: 12.5%;
+    }
+
+    .col-md-2 {
+        width: 8.333333333333334%;
+    }
+
+    .col-md-1 {
+        width: 4.166666666666667%;
+    }
+
+    .shortcuts {
+        margin-bottom: 5px;
+    }
+
+    form.search {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .nav.page .search input {
+        width: 80%;
+    }
+
+    .nav.page .search button {
+        width: 20%;
+    }
+
+    .nav.page .search .rec-group {
+        right: 128px;
+    }
+</style>
+
+<style media="screen and (max-width:400px)">
+    .col-sm-24 {
+        width: 100%;
+    }
+
+    .col-sm-23 {
+        width: 95.83333333333334%;
+    }
+
+    .col-sm-22 {
+        width: 91.66666666666667%;
+    }
+
+    .col-sm-21 {
+        width: 87.5%;
+    }
+
+    .col-sm-20 {
+        width: 83.33333333333334%;
+    }
+
+    .col-sm-19 {
+        width: 79.16666666666667%;
+    }
+
+    .col-sm-18 {
+        width: 75%;
+    }
+
+    .col-sm-17 {
+        width: 70.83333333333334%;
+    }
+
+    .col-sm-16 {
+        width: 66.66666666666667%;
+    }
+
+    .col-sm-15 {
+        width: 62.50000000000001%;
+    }
+
+    .col-sm-14 {
+        width: 58.333333333333336%;
+    }
+
+    .col-sm-13 {
+        width: 54.16666666666667%;
+    }
+
+    .col-sm-12 {
+        width: 50%;
+    }
+
+    .col-sm-11 {
+        width: 45.833333333333336%;
+    }
+
+    .col-sm-10 {
+        width: 41.66666666666667%;
+    }
+
+    .col-sm-9 {
+        width: 37.5%;
+    }
+
+    .col-sm-8 {
+        width: 33.333333333333336%;
+    }
+
+    .col-sm-7 {
+        width: 29.166666666666668%;
+    }
+
+    .col-sm-6 {
+        width: 25%;
+    }
+
+    .col-sm-5 {
+        width: 20.833333333333336%;
+    }
+
+    .col-sm-4 {
+        width: 16.666666666666668%;
+    }
+
+    .col-sm-3 {
+        width: 12.5%;
+    }
+
+    .col-sm-2 {
+        width: 8.333333333333334%;
+    }
+
+    .col-sm-1 {
+        width: 4.166666666666667%;
+    }
+
+    .sm-hide {
+        display: none;
+    }
+
+    .sm-glass {
+        opacity: 0;
+    }
+
+    .nav.global .col.right {
+        float: left;
+    }
+
+    .nav.page {
+        margin-bottom: 5px;
+    }
+
+    .nav.page .link-group > * {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    form.search {
+        width: 100%;
+    }
+
+    .nav.page .search input {
+        width: 80%;
+    }
+
+    .nav.page .search button {
+        width: 20%;
+    }
+
+    .nav.page .search .rec-group {
+        right: 76px;
+    }
+
+    .slider .container {
+        min-height: 150px;
+        background-position: center;
+        -webkit-background-size: 150%;
+        background-size: 150%;
+    }
+
+    .slider .navigator > * {
+        top: 48px;
+    }
+
+    .top-promo .container > * {
+        margin-bottom: 5px;
+    }
+</style>
+
+<div class="row nav global">
+    <div class="container">
+        <div class="col left">
+            <a href="#">小米商城</a>
+            <a href="#">MIUI</a>
+            <a href="#">IoT</a>
+            <a href="#">云服务</a>
+            <a href="#">金融</a>
+            <a href="#">MIUI</a>
+            <a href="#">IoT</a>
+            <a href="#">云服务</a>
+            <a href="#">金融</a>
+            <a href="#">有品</a>
+        </div>
+        <div class="col right">
+            <a href="#">登录注册</a>
+            <a href="#">注册</a>
+            <a href="#" class="lighter">购物车</a>
+        </div>
+    </div>
+</div>
+<div class="row first-screen">
+    <div class="row nav page">
+        <div class="container">
+            <div class="col img-group sm-hide">
+                <div class="col logo"></div>
+                <div class="col doodle">
+                    <img src="https://public.biaoyansu.com/frontend/046-mi/img/doodle.webp" alt="">
+                </div>
+            </div>
+            <div class="col link-group">
+                <a href="#">小米手机</a>
+                <a href="#">红米</a>
+                <a href="#">电视</a>
+                <a href="#">笔记本</a>
+                <a href="#">空调</a>
+                <a href="#">小米手机</a>
+                <a href="#">红米</a>
+            </div>
+            <form class="col right search">
+                <div class="search-input">
+                    <input type="text">
+                    <button>搜</button>
+                </div>
+                <span class="rec-group">
+                    <span class="rec">小米8</span>
+                    <span class="rec">小米MIX 2s</span>
+                </span>
+            </form>
+        </div>
+    </div>
+    <div class="row nav slider">
+        <div class="container">
+            <div class="col col-4 cat-group sm-hide">
+                <a href="#" class="cat">手机 电话卡</a>
+                <a href="#" class="cat">电视 盒子</a>
+                <a href="#" class="cat">笔记本 平板</a>
+                <a href="#" class="cat">家电 插线板</a>
+                <a href="#" class="cat">智能 路由器</a>
+                <a href="#" class="cat">手机 电话卡</a>
+                <a href="#" class="cat">电视 盒子</a>
+                <a href="#" class="cat">笔记本 平板</a>
+                <a href="#" class="cat">智能 路由器</a>
+            </div>
+            <div href="#" class="col col-20 col-sm-24 preview">
+                <a href="#" class="linker"></a>
+                <div class="navigator">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row card-group top-promo">
+        <div class="container">
+            <div class="col col-6 col-md-24 col-sm-24 shortcuts">
+                <div class="col col-8">
+                    <div class="icon"></div>
+                    <div class="text">选购手机</div>
+                </div>
+                <div class="col col-8">
+                    <div class="icon"></div>
+                    <div class="text">企业团购</div>
+                </div>
+                <div class="col col-8">
+                    <div class="icon"></div>
+                    <div class="text">F码通道</div>
+                </div>
+                <div class="col col-8">
+                    <div class="icon"></div>
+                    <div class="text">选购手机</div>
+                </div>
+                <div class="col col-8">
+                    <div class="icon"></div>
+                    <div class="text">企业团购</div>
+                </div>
+                <div class="col col-8">
+                    <div class="icon"></div>
+                    <div class="text">F码通道</div>
+                </div>
+            </div>
+            <div class="col col-6 col-md-8 col-sm-24">
+                <img src="https://public.biaoyansu.com/frontend/046-mi/img/top-promo-card.jpg" alt="">
+            </div>
+            <div class="col col-6 col-md-8 col-sm-24">
+                <img src="https://public.biaoyansu.com/frontend/046-mi/img/top-promo-card.jpg" alt="">
+            </div>
+            <div class="col col-6 col-md-8 col-sm-24">
+                <img src="https://public.biaoyansu.com/frontend/046-mi/img/top-promo-card.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row main">
+    <div class="cat-box">
+        <div class="container">
+            <div class="row title">
+                <div class="col left">手机</div>
+                <div class="col right"></div>
+            </div>
+            <div class="row card-group">
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-12 col-sm-24">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <img src="https://public.biaoyansu.com/frontend/046-mi/img/tv-thumbnail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">小米电视4A 青春版</div>
+                            <div class="desc">全高清屏 / 人工智能语音</div>
+                            <div>
+                                <span class="price">1499元</span>
+                                <span class="original">1499元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="info">
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+    <div class="row meta"></div>
+</div>
