@@ -1,0 +1,130 @@
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+<!-- https://getbootstrap.com/ -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<h2>button</h2>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+<hr>
+
+<h2>outline-button</h2>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<hr>
+
+<h2>button-size</h2>
+<button type="button" class="btn btn-secondary btn-sm">sm button</button>
+<button type="button" class="btn btn-primary btn-md">md button</button>
+<button type="button" class="btn btn-secondary btn-lg">lg button</button>
+<hr>
+
+<h2>block-botton</h2>
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+<hr>
+
+<h2>active-state-button</h2>
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+<hr>
+
+<h2>disabled-state-button</h2>
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+<hr>
+
+<h2>button-group</h2>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+<hr>
+
+<h2>button-toolbar</h2>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+        <button type="button" class="btn btn-secondary">3</button>
+        <button type="button" class="btn btn-secondary">4</button>
+    </div>
+    <div class="btn-group mr-2" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-secondary">5</button>
+        <button type="button" class="btn btn-secondary">6</button>
+        <button type="button" class="btn btn-secondary">7</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-secondary">8</button>
+    </div>
+</div>
+<hr>
+
+<h2>button-group-size</h2>
+<div class="btn-group btn-group-sm" role="group" aria-label="sm group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+<div class="btn-group" role="group" aria-label="md-group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+<div class="btn-group btn-group-lg" role="group" aria-label="lg group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+<hr>
+
+<h2>button-nesting</h2>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link (need js)</a>
+            <a class="dropdown-item" href="#">Dropdown link (need js)</a>
+        </div>
+    </div>
+</div>
+<hr>
+
+<h2>button-vertical</h2>
+<div class="btn-group btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link (need js)</a>
+            <a class="dropdown-item" href="#">Dropdown link (need js)</a>
+        </div>
+    </div>
+</div>
+<hr>
